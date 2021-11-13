@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: mintcream;
+  margin: 0;
+  padding: 0;
+}
+
+.title-box {
+  margin: 0 1em;
+  text-align: center;
+  background: lightslategray;
+  border-radius: 20px;
+}
+.app-title {
+  margin: 0em;
+  padding-top: 0.5em;
+}
+
+.title-box h4 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5em;
+}
+
+.tracker-container {
+  background: lightblue;
+  border-radius: 20px;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.submit {
+  background: lightslategrey;
+  color: mintcream;
+  font-weight: bold;
+  border-width: 3px;
+  border-color: grey;
+}
+
+.form-enter {
+  padding: 1em 2em;
+}
+
+.list-key {
+  margin-bottom: 0.5em;
+  background: mistyrose;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-list {
+  text-align: right;
+  align-items: right;
+}
+
+.list-item {
+  margin: 0em;
+  background: moccasin;
+  list-style: none;
+  display: flex;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(221, 201, 166);
+}
+
+.list-show {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 33%;
+  /* flex-direction: row; */
+}
+.list-score {
+  display: flex;
+  width: 33%;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+.remove {
+  display: flex;
+  width: 33%;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+}
+
+.remove-all {
+  margin-top: 3em;
+  background: rgb(219, 86, 86);
+  color: mintcream;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    width: 56em;
+    margin: auto;
+  }
+}
