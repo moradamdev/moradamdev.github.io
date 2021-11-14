@@ -662,5 +662,9 @@ border-color: var(--bordercolor); */
 
 /* Thank you page */
 .thanks {
-  margin: auto;
+  background: var(--herocolor);
+  text-align: center;
+  padding-top: 20vh;
+  block-size: 80vh;
 }
+
