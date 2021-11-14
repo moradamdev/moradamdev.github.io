@@ -115,6 +115,9 @@ nav.menu-btn {
 #hey-adam {
   padding: 1em;
 }
+.tiny-img {
+  width: 0.6em;
+}
 .down-arrow {
   display: none;
 }
@@ -201,10 +204,27 @@ nav.menu-btn {
   text-decoration: none;
   list-style-type: none;
 }
-.descriptor-text {
+
+.source-code {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.descriptor-text {
+  /* text-align: center; */
+  /* margin: auto; */
   /* width: 50%; */
   padding: 0 3em;
+}
+
+.descriptor-link-image {
+  padding-left: 1em;
+  width: 2em;
+}
+
+.descriptor-link-image:hover {
+  opacity: 50%;
 }
 
 .form {
@@ -318,7 +338,7 @@ border-color: var(--bordercolor); */
   }
 } */
 
-@media only screen and (min-width: 1000px) and (min-height: 511px) {
+@media only screen and (min-width: 1183px) and (min-height: 511px) {
   .topbar {
     height: 60px;
     position: sticky;
@@ -394,10 +414,13 @@ border-color: var(--bordercolor); */
   #hey-adam {
     font-size: 3em;
   }
-
-  .skill-img:hover {
-    opacity: 0.5;
+  .tiny-img:hover {
+    opacity: 50%;
   }
+
+  /* .skill-img:hover {
+    opacity: 0.5;
+  } */
   .hero {
     /* position: relative; */
     border-top: 0;
@@ -502,7 +525,7 @@ border-color: var(--bordercolor); */
   }
 
   .aboutme-p {
-    color: var(--lighttextcol);
+    color: #2f3b41;
     margin: 0;
     padding-left: 3em;
     text-align: left;
@@ -658,6 +681,12 @@ border-color: var(--bordercolor); */
     display: flex;
     justify-content: space-between;
   }
+  .footer-link {
+    text-decoration: none;
+  }
+  .footer-link:visited {
+    color: lightgray;
+  }
 }
 
 /* Thank you page */
@@ -668,3 +697,30 @@ border-color: var(--bordercolor); */
   block-size: 80vh;
 }
 
+@media only screen and (min-width: 1540px) and (min-height: 511px) {
+  .about {
+    padding-top: 4em;
+  }
+  .skills {
+    border: none;
+    display: block;
+    text-align: left;
+
+    background: var(--aboutcol);
+    margin-top: -1em;
+    /* margin-top: 0em; */
+    /* height: 60vh; */
+  }
+
+  .skill-img {
+    /* padding-top: -1em; */
+    /* margin-top: -3em; */
+    padding-top: 1em;
+    /* margin-bottom: 2em; */
+    padding-left: 2em;
+  }
+
+  .skill-images {
+    margin-left: 3.7em;
+  }
+}
