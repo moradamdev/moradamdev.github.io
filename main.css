@@ -79,6 +79,10 @@ nav.menu-btn {
   cursor: pointer;
 }
 
+.download-button {
+  width: 0.75em;
+}
+
 #am-logo {
   margin: 1em;
   border-radius: 1.5em;
