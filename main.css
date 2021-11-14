@@ -659,3 +659,8 @@ border-color: var(--bordercolor); */
     justify-content: space-between;
   }
 }
+
+/* Thank you page */
+.thanks {
+  margin: auto;
+}
