@@ -573,6 +573,7 @@ nav.menu-btn {
   }
   .footer-link {
     text-decoration: none;
+    color: lightgray;
   }
   .footer-link:visited {
     color: lightgray;
