@@ -380,7 +380,7 @@ nav.menu-btn {
     position: absolute;
     display: flex;
     bottom: 25px;
-    left: 50vw;
+    left: calc(50% - 50px);
     margin: auto;
     animation-name: up-down;
     animation-duration: 3s;
