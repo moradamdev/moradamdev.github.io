@@ -8,65 +8,59 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+
     <div class="topbar">
         <a href="#"><img id="am-logo" src="images/AM.png" alt="AM logo"></a>
-        <a id="adam-top" href="#">Adam Morales</a>
+        <a id="adam-top" href="#">/* Adam Morales */</a>
         <img id="mobile-cta" class="hamburger" src="images/hamburger.png" alt="Open Navigation">
-    
+
         <nav>
             <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
             <ul class="primary-nav">
-                <li class="current"><a href="#about-sec">About Me</a></li>
                 <li><a href="#projects-sec">Projects</a></li>
                 <li><a href="#form-sec">Contact</a></li>
                 <li><a href="AdamMorales-Resume.pdf" download="AdamMoralesResume">Resume <img class="download-button" src="images/download.png" alt="downloadbutton"></a></li>
             </ul>
         </nav>
     </div>
+    <div class="two-border"> </div>
 
 
     <section id="top-sec">
         <div class="hero">
-            <h1 id="hey-adam">Hey, I'm Adam <a href="https://github.com/moradamdev" target="_blank"><img class="tiny-img" src="images/gitlogo.png" alt="github link"></a> <a href="https://www.linkedin.com/in/moradam/" target="_blank"><img class="tiny-img" src="images/linkedinlogo.png"
-                    alt="linkedin link"></a></h1>
-            
-            <img id="reading" src="/images/readingbook.gif" alt="adam reading">
-            <div class="imake">
-                <h1 id="make-web">I make websites</h1>
-                <h2 class="extra">+games</h2>
-                <h2 class="extra" id="extra-art">+art</h2>
+            <h1 id="hey-adam"> >Hey, I'm Adam <a href="https://github.com/moradamdev" target="_blank"><img class="tiny-img" src="images/gitlogo.png" alt="github link"></a> <a href="https://www.linkedin.com/in/moradam/" target="_blank"><img class="tiny-img" src="images/linkedinlogo.png"
+                    alt="linkedin link"></a><span> |</span></h1>
+        <section id="about-sec">
+            <img class="fade-img" id="fade-top" src="./images/fade.png" alt="fade out image">
+            <div class="about">
+
+                <h1 class="h1left">&lt;head&gt;</h1>
+                <p class="aboutme-p">
+                    Frontend Developer <br>
+                    UX Designer <br>
+                    Game Developer <br>
+                    Artist
+                </p>
+                <h1 class="h1left">&lt;/head&gt;</h1><br>
+                <h1 class="h1left">&lt;about&gt;</h1>
+                <p class="aboutme-p">I'm a frontend developer with a passion for making intuitive, user friendly websites. <br>
+                I learned to program in 2017 to create <span>video games</span> and after one thing led to another, I'm now here making websites. <br>
+                Catch me <span>running marathons</span> and playing the <span>bass</span> on my days off.</p>
+
+                <h1 class="h1left">&lt;/about&gt;</h1>
+
             </div>
-            <a href="#about-sec"><img src="./images/arrowdown.png" alt="drop down arrow" class="down-arrow"></a>
-            
-        </div>
-    </section> 
-    <section id="about-sec">
-        <div class="about">
-            <h1 class="h1center">About me</h1>
-            <p class="aboutme-p">I’m a front end developer from NY, who loves making
-            beautiful, intuitive websites for everyone to enjoy.
-            I learned to program because I have a passion
-            for creating things.</p><br>
-            <p class="aboutme-p">On the side, I make video games and art.</p>
+            <img class="fade-img" id="fade-bot" src="./images/fade.png" alt="fade out image">
+            <a href="#projects-sec"><img src="./images/arrowdown.png" alt="drop down arrow" class="down-arrow"></a>
+        </section>
         </div>
     </section>
 
-    <div class="skills">
-        <h1 class="h1center">Skills</h1>
-        <div class="skill-images">
-            <img class="skill-img" src="images/vue.png" alt="vue icon">
-            <img class="skill-img" src="images/javascript.png" alt="javascript icon">
-            <img class="skill-img" src="images/html.png" alt="html icon">
-            <img class="skill-img" src="images/css.png" alt="css icon">
-            <img class="skill-img" src="images/photoshop.png" alt="photoshop icon">
-            <img class="skill-img" src="images/c++.png" alt="c++ icon">
-        </div>
-    </div>
 
+<div class="big-container">
     <section id="projects-sec">
         <div class="projects">
-            <h1 class="h1center">Projects</h1>
+            <h1 class="h1left">&lt;projects&gt;</h1>
             <div class="container">
                 <ul class="proj-image-container">
                     <li>
@@ -82,31 +76,47 @@
                                 src="images/gitlogo.png" alt="github link"></a></p>
                     </li>
                     <li>
-                        <a class="proj-title" target="_blank" href="tvtracker.html">TV Tracker<img class="project-image" src="images/tvtrackerapp.png"alt="other website"></a>
-                        <p class="descriptor-text">Log all of your favorite shows, give them ratings too.</p>
-                        <p class="source-code">Source Code: <a href="https://github.com/moradamdev/TvTracker" target="_blank"><img
+                        <a class="proj-title" target="_blank" href="tvtracker.html">Ice Herald<img class="project-image" src="images/icecream.png"alt="other website"></a>
+                        <p class="descriptor-text">Website for a local ice cream shop.</p>
+                        <p class="source-code">Source Code:<a href="https://github.com/moradamdev/TvTracker" target="_blank"><img
                                     class="descriptor-link-image" src="images/gitlogo.png" alt="github link"></a></p>
                     </li>
                 </ul>
             </div>
+            <h1 id="proj-bottom" class="h1left">&lt;/projects&gt;</h1>
 
         </div>
     </section>
-    <section id="form-sec">
-   <div class="form">
-        <h1 class="h1center">Contact Me:</h1>
-        <form action="https://formsubmit.co/adamomorales@gmail.com" method="POST" />
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://adammorales.com/thankyou">
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email" required><br>
-            <label for="Message">Enter Message:</label><br>
-            <textarea name="Message" id="messageid" cols="30" rows="10"></textarea>
-            <br>
-            <button type="submit">SUBMIT</button>
-        </form>
-        
+    <div class="skills">
+        <h1 class="h1left">&lt;skills&gt;</h1>
+        <div class="skill-images">
+            <p>&lt;! - - While I mostly use JavaScript(VueJS), HTML and CSS, I'm also proficient in these too. - - &gt;</p>
+            <img class="skill-img" src="images/vue.png" alt="vue icon">
+            <img class="skill-img" src="images/javascript.png" alt="javascript icon">
+            <img class="skill-img" src="images/html.png" alt="html icon">
+            <img class="skill-img" src="images/css.png" alt="css icon">
+            <img class="skill-img" src="images/photoshop.png" alt="photoshop icon">
+            <img class="skill-img" src="images/c++.png" alt="c++ icon">
+        </div>
+        <h1 class="h1left">&lt;/skills&gt;</h1>
     </div>
+    <section id="form-sec">
+        <div class="form">
+                <h1 class="h1left">&lt;contact&gt;</h1>
+                <form action="https://formsubmit.co/adamomorales@gmail.com" method="POST" />
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://adammorales.com/thankyou">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="Message">Enter Message:</label><br>
+                    <textarea name="Message" id="messageid" cols="50" rows="10"></textarea>
+                    <br>
+                    <button type="submit"><h1>&lt;submit&gt;</h1></button>
+                </form>
+                <h1 class="h1left">&lt;/contact&gt;</h1>
+            </div>
+    </div>
+
     <div class="footer-container">
         <ul class="footer">
             <li ><a class="footer-link" href="https://www.linkedin.com/in/moradam/" target="_blank" class="linkedin">LinkedIn</a></li>
@@ -118,17 +128,18 @@
     </section>
 
 
-    <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-        nav = document.querySelector('nav');
-        mobileBtnExit = document.getElementById('mobile-exit');
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    </script>
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav');
+    mobileBtnExit = document.getElementById('mobile-exit');
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+</script>
 
 </body>
 </html>
