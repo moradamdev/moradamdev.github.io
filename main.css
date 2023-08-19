@@ -85,11 +85,15 @@ nav.menu-btn {
 .squares {
   display: none;
 }
+.square-dec{
+  display: none;
+}
 
 .mobile-menu-exit {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+  width: 1.5em;
 }
 
 .download-button {
@@ -105,45 +109,46 @@ nav.menu-btn {
   opacity: 80%;
 }
 #adam-top {
-  /* font-weight: bold; */
   font-style: italic;
   color: var(--bordercolor);
   text-decoration: none;
   font-size: 2em;
-  opacity: 50%;
-  /* padding-top: 1em; */
+  opacity: 70%;
   display: flex;
   align-self: center;
 }
 
 .hamburger {
   margin-right: 1em;
-  /* margin-top: 1em; */
   display: block;
   margin-left: auto;
   height: 1.8em;
-  /* width: 2em; */
   cursor: pointer;
   align-self: center;
 }
 
 .hero {
-  /* border-style: solid;
-  border-width: thick;
-  border-left: 0em;
-  border-right: 0em; */
   margin: 0em;
   background: var(--herocolor);
-  /* border-top: 2px solid var(--text-color); */
-  /* border-color: var(--bordercolor); */
 }
 #hey-adam {
   padding: 1em;
   color: var(--text-color);
   font-size: 2.5em;
 }
+#hey-adam a{
+  margin-left:.2em;
+}
 #hey-adam span{
-  color:yellow;
+  color:var(--text-color);
+  animation: blinker 1.5s step-start infinite;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .tiny-img {
   width: 0.6em;
@@ -169,11 +174,10 @@ nav.menu-btn {
 }
 
 .h1left {
-  /* text-align: center; */
   font-size: 1em;
   margin-left: .5em;
   color: var(--text-color);
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .about {
@@ -181,21 +185,81 @@ nav.menu-btn {
   padding: 0em;
   margin-top: 0em;
   background: #07151f;
-  /* border-style: solid;
-  border-color: var(--bordercolor);
-  border-right: 0em;
-  border-left: 0em;
-  border-width: thick; */
 }
 .aboutme-p{
   text-align: left;
   margin: auto;
   width:90%;
-  opacity: 50%;
+  opacity: 70%;
 }
 .aboutme-p span{
   color: var(--text-color);
 }
+
+.aboutme-p span:hover{
+  color:white;
+  cursor: pointer;
+}
+#gif-container{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100vh;
+  background: rgba(0, 0, 0, 0.479);
+  animation: fadein 1s;
+  z-index: 999;
+}
+#vid-img{
+  border: 4px solid var(--bordercolor);
+  display: none;
+  position: fixed;
+  top:16em;
+  left:calc(50% - 150px);
+  width:300px;
+  animation: fadein 1s;
+}
+
+#mar-gif{
+  border: 4px solid var(--bordercolor);
+  display: none;
+  position: fixed;
+  top:16em;
+  left:calc(50% - 150px);
+  width:300px;
+  animation: fadein 1s;
+}
+#bas-gif{
+  border: 4px solid var(--bordercolor);
+  display: none;
+  position: fixed;
+  top:16em;
+  left:calc(50% - 150px);
+  width:300px;
+  animation: fadein 1s;
+}
+#gif-x-out{
+  color: var(--bordercolor);
+  top:14em;
+  right:calc(50% - 12em);
+  position: absolute;
+  animation: fadein 1s;
+  z-index: 999;
+  width: 1.5em;
+}
+#gif-x-out:hover{
+  cursor: pointer;
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
 .fade-img{
   width:100%;
   max-height: 80px;
@@ -205,7 +269,7 @@ nav.menu-btn {
 }
 #fade-top{
   margin-top:-7em;
-  margin-bottom: -.5em;
+  margin-bottom: -.32em;
 }
 
 .skills {
@@ -225,7 +289,6 @@ nav.menu-btn {
   padding-left: 2em;
   padding-right:2em;
   opacity: 80%;
-  /* text-align: center; */
 }
 
 .skill-img {
@@ -236,16 +299,10 @@ nav.menu-btn {
   padding-top: 5em;
   color: var(--bordercolor);
   background: var(--herocolor);
-  /* border-style: solid;
-  border-width: thick;
-  border-right: 0em;
-  border-left: 0em;
-  border-color: var(--bordercolor); */
-  /* height:100%; */
   text-decoration: none;
 }
 .projects p{
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .proj-title {
@@ -281,26 +338,26 @@ nav.menu-btn {
 
 .descriptor-text {
   text-align: center;
-  /* padding: 0 3em; */
 }
 
 .descriptor-link-image {
   padding-left: 1em;
-  width: 2em;
+  width: 1em;
+  padding-top:.15em;
 }
 
 .descriptor-link-image:hover {
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .form {
   padding-top: 2em;
   padding-bottom: 5em;
   display: block;
-  /* text-align: center; */
   background: var(--topbar-color);
 }
 form{
+  padding-top: 2em;
   text-align: center;
   color: var(--bordercolor);
 }
@@ -311,7 +368,7 @@ input{
   border-width: 3px;
   border-top: none;
   border-left: none;
-  color: rgb(180, 180, 180);
+  color: var(--text-color);
 }
 textarea{
   background-color: rgba(0, 0, 0, 0.295);
@@ -320,7 +377,7 @@ textarea{
   border-width: 3px;
   border-top: none;
   border-left: none;
-  color: rgb(180, 180, 180);
+  color: var(--text-color);
 }
 
 form button{
@@ -330,10 +387,8 @@ form button{
     padding:.25em;
     border:none;
     font-size: .7em;
-    /* font-weight:100; */
     margin-bottom:2em;
     font-family: 'Fira Code', monospace;
-    /* opacity: 50%; */
   }
 .footer-container {
   display: none;
@@ -341,7 +396,6 @@ form button{
 
 @media only screen and (min-width: 800px) {
   .big-container{
-    /* background-color: var(--herocolor); */
     margin: auto;
     width:80%;
   }
@@ -373,6 +427,21 @@ form button{
     margin: auto;
     width:80%;
     padding-left: 4em;
+  }
+  #gif-x-out{
+    right:calc(50% - 15em);
+  }
+  #vid-img{
+    left:calc(50% - 200px);
+    width:400px;
+  }
+  #bas-gif{
+    left:calc(50% - 200px);
+    width:400px;
+  }
+  #mar-gif{
+    left:calc(50% - 200px);
+    width:400px;
   }
 }
 
@@ -453,20 +522,17 @@ form button{
     display: block;
     display: none;
   }
-  .hero {
 
-    /* border-top: 3px solid var(--text-color); */
+
+  .hero {
     height: calc(100vh + 60px);
     display: flex;
-    /* justify-content: space-around; */
     flex-direction: column;
     font-size: 1em;
   }
   .about{
     font-size: 1.2em;
     padding:1em 5em;
-    /* padding:auto; */
-    /* width:75%; */
   }
 
   .primary-nav {
@@ -488,7 +554,6 @@ form button{
   }
 
   .proj-image-container {
-    /* padding: 3em; */
     display: flex;
     text-decoration: none;
     list-style-type: none;
@@ -504,8 +569,6 @@ form button{
     text-decoration: none;
   }
   .project-image {
-    /* margin:0em; */
-    /* padding-left:1em; */
     border: none;
     text-align: center;
   }
@@ -544,23 +607,82 @@ form button{
     vertical-align: bottom;
   }
 
+  .square-dec{
+    display: initial;
+    position:relative;
+    opacity: 5%;
+    z-index:1;
+  }
+  #square1{
+    position:absolute;
+    width:150px;
+    left:75vw;
+    top:20vh;
+    transform: rotate(-10deg);
+    animation: spin-left 100s infinite linear;
+
+  }
+  #square2{
+    position:absolute;
+    left:80vw;
+    transform: rotate(20deg);
+    top:15vh;
+    width:150px;
+    animation: spin-right 120s infinite linear;
+  }
+  #square3{
+    position:absolute;
+    left:5vw;
+    transform: rotate(0deg);
+    top:30em;
+    width:150px;
+    animation: spin-right 110s infinite linear;
+  }
+  #square4{
+    position:absolute;
+    left:50vw;
+    transform: rotate(0deg);
+    top:280vh;
+    width:150px;
+    animation: spin-right 100s infinite linear;
+  }
+  #square5{
+    position:absolute;
+    left:80vw;
+    transform: rotate(0deg);
+    top:240vh;
+    width:150px;
+    animation: spin-left 80s infinite linear;
+  }
+
+
+  @keyframes spin-right {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes spin-left {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
   .form {
-    /* height: calc(100vh); */
     position: static;
     width: 100%;
     display: block;
-    /* border-style: solid;
-    border-width: thick; */
-    /* border-bottom: 50px solid var(--bordercolor); */
-    /* border-color: ; */
+
   }
 
   form {
-    /* display: inline-block; */
     margin-left: 2em;
     text-align: left;
-    /* width: 75%; */
-    /* margin:auto; */
   }
   input {
     outline: none;
@@ -586,19 +708,16 @@ form button{
 
 
   button:hover {
-    background: #acacac;
-    border-color: #acacac;
-    color: white;
+    color: var(--text-color);
+    cursor: pointer;
   }
 
   .footer-container {
-    /* width: 100%; */
     margin:0em;
     background-color: #ef767a80;
     display: block;
     padding-left: 10%;
     padding-right: 10%;
-    /* margin-top: -60px; */
   }
   .footer {
     opacity: 100%;
@@ -614,138 +733,20 @@ form button{
   .footer-link:visited {
     color: lightgray;
   }
-}
-  /* .big-container{
-    width:100%;
+
+  #vid-img{
+    left:calc(50% - 250px);
+    width:500px;
+  }
+  #bas-gif{
+    left:calc(50% - 250px);
+    width:500px;
+  }
+  #mar-gif{
+    left:calc(50% - 250px);
+    width:500px;
+  }
+  /* #gif-x-out{
+    right:calc(50% - 15em);
   } */
-
-
-  /*#hey-adam {
-    font-size: 3em;
-  }
-  .tiny-img:hover {
-    opacity: 50%;
-  }
-
-
-  #reading {
-
-    margin-right: auto;
-    width: 70vh;
-  }
-
-  .imake {
-    margin-bottom: 1vh;
-  }
-
-  #make-web {
-    font-size: 2.5em;
-    text-align: right;
-    margin-top: -2.8em;
-  }
-  .extra {
-    font-size: 2em;
-    color: #aaaaaa;
-    margin-top: 0;
-    margin: 0;
-    margin-right: 5.7em;
-    text-align: right;
-  }
-  #extra-art {
-    margin-right: 7.8em;
-  }
-
-
-
-  .about {
-    height: 50vh;
-    padding: 0;
-    margin-top: 0;
-    border-bottom: 0;
-    border-top: 0;
-  }
-  .h1left {
-    overflow: hidden;
-    color: var(--lighttextcol);
-    padding-top: 2em;
-    margin-left: 2em;
-    text-align: left;
-    font-size: 3em;
-  }
-
-  .h1left:after {
-    content: "";
-    display: inline-block;
-    height: 0.65em;
-    vertical-align: bottom;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 2px solid var(--bordercolor);
-  }
-
-  .aboutme-p {
-    color: #2f3b41;
-    margin: 0;
-    padding-left: 3em;
-    text-align: left;
-    font-size: 2em;
-  }
-
-  .skills {
-    border: none;
-    display: block;
-    text-align: left;
-    margin: auto;
-    background: var(--aboutcol);
-    height: 50vh;
-  }
-
-  .skill-img {
-    padding-top: 1em;
-    padding-left: 2em;
-  }
-
-  .skill-images {
-    margin-left: 3.7em;
-  }
-
-
-
-  .descriptor-text {
-    text-align: center;
-    padding: 0 3em;
-  }
-
-
 }
-
-.thanks {
-  background: var(--herocolor);
-  text-align: center;
-  padding-top: 20vh;
-  block-size: 80vh;
-}
-
-@media only screen and (min-width: 1540px) and (min-height: 511px) {
-  .about {
-    padding-top: 4em;
-  }
-  .skills {
-    border: none;
-    display: block;
-    text-align: left;
-
-    background: var(--aboutcol);
-    margin-top: -1em;
-  }
-
-  .skill-img {
-    padding-top: 1em;
-    padding-left: 2em;
-  }
-
-  .skill-images {
-    margin-left: 3.7em;
-  }
-} */

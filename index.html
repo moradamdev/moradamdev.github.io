@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam-Morales</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         <img id="mobile-cta" class="hamburger" src="images/hamburger.png" alt="Open Navigation">
 
         <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/xout.png" alt="Close Navigation">
             <ul class="primary-nav">
                 <li><a href="#projects-sec">Projects</a></li>
                 <li><a href="#form-sec">Contact</a></li>
@@ -25,14 +25,27 @@
     </div>
     <div class="two-border"> </div>
 
-
+    <div class="square-dec">
+        <img id="square1" src="./images/square1.png" alt="sqare decoration 1">
+        <img id="square2" src="./images/square2.png" alt="sqare decoration 2">
+        <img id="square3" src="./images/square1.png" alt="sqare decoration 3">
+        <img id="square4" src="./images/square2.png" alt="sqare decoration 4">
+        <img id="square5" src="./images/square1.png" alt="sqare decoration 5">
+    </div>
     <section id="top-sec">
         <div class="hero">
-            <h1 id="hey-adam"> >Hey, I'm Adam <a href="https://github.com/moradamdev" target="_blank"><img class="tiny-img" src="images/gitlogo.png" alt="github link"></a> <a href="https://www.linkedin.com/in/moradam/" target="_blank"><img class="tiny-img" src="images/linkedinlogo.png"
-                    alt="linkedin link"></a><span> |</span></h1>
+            <h1 id="hey-adam"> >Hey, I'm Adam<a href="https://github.com/moradamdev" target="_blank"><img class="tiny-img" src="images/gitlogo.png" alt="github link"></a><a href="https://www.linkedin.com/in/moradam/" target="_blank"><img class="tiny-img" src="images/linkedinlogo.png"
+                    alt="linkedin link"></a><span>|</span></h1>
         <section id="about-sec">
+            <div id="gif-container">
+                    <img id="vid-img" src="images/videogame.gif" alt="gif from my game">
+                    <img id="mar-gif" src="images/marathon1.gif" alt="me finishing my half marathon">
+                    <img id="bas-gif" src="images/bass.gif" alt="me playing the bass">
+                    <img id="gif-x-out" src="images/xout.png" alt="">
+                </div>
             <img class="fade-img" id="fade-top" src="./images/fade.png" alt="fade out image">
             <div class="about">
+
 
                 <h1 class="h1left">&lt;head&gt;</h1>
                 <p class="aboutme-p">
@@ -41,13 +54,16 @@
                     Game Developer <br>
                     Artist
                 </p>
+
                 <h1 class="h1left">&lt;/head&gt;</h1><br>
                 <h1 class="h1left">&lt;about&gt;</h1>
                 <p class="aboutme-p">I'm a frontend developer with a passion for making intuitive, user friendly websites. <br>
-                I learned to program in 2017 to create <span>video games</span> and after one thing led to another, I'm now here making websites. <br>
-                Catch me <span>running marathons</span> and playing the <span>bass</span> on my days off.</p>
+                I learned to program in 2017 to create <span id="v-span">video games</span> and after one thing led to another, I'm now here making websites. <br>
+                Catch me <span id="m-span">running marathons</span> and playing the <span id="b-span">bass</span> on my days off.</p>
 
                 <h1 class="h1left">&lt;/about&gt;</h1>
+
+
 
             </div>
             <img class="fade-img" id="fade-bot" src="./images/fade.png" alt="fade out image">
@@ -76,10 +92,9 @@
                                 src="images/gitlogo.png" alt="github link"></a></p>
                     </li>
                     <li>
-                        <a class="proj-title" target="_blank" href="tvtracker.html">Ice Herald<img class="project-image" src="images/icecream.png"alt="other website"></a>
-                        <p class="descriptor-text">Website for a local ice cream shop.</p>
-                        <p class="source-code">Source Code:<a href="https://github.com/moradamdev/TvTracker" target="_blank"><img
-                                    class="descriptor-link-image" src="images/gitlogo.png" alt="github link"></a></p>
+                        <a class="proj-title" target="_blank" href="https://www.adammorales.net/">UX Design<img class="project-image" src="images/uxdesign.png"alt="other website"></a>
+                        <p class="descriptor-text">Website for my UX Design Portfolio</p>
+                        <p class="source-code">---</a></p>
                     </li>
                 </ul>
             </div>
@@ -121,7 +136,7 @@
         <ul class="footer">
             <li ><a class="footer-link" href="https://www.linkedin.com/in/moradam/" target="_blank" class="linkedin">LinkedIn</a></li>
             <li><a class="footer-link" href="https://github.com/moradamdev" target="_blank" class="github">GitHub</a></li>
-            <li><a class="footer-link" href="AdamMoralesResume2.pdf" download="AdamMoralesResume" class="resume-download">Download Resume</a></li>
+            <li><a class="footer-link" href="AdamMorales-Resume.pdf" download="AdamMoralesResume" class="resume-download">Download Resume</a></li>
             <li><a class="footer-link" href="#">Back to top</a></li>
         </ul>
     </div>
@@ -133,12 +148,49 @@
     const mobileBtn = document.getElementById('mobile-cta')
     nav = document.querySelector('nav');
     mobileBtnExit = document.getElementById('mobile-exit');
+
+    const container = document.getElementById('gif-container');
+    const vSpan = document.getElementById('v-span')
+    const vidImage = document.getElementById('vid-img')
+
+    const mSpan = document.getElementById('m-span')
+    const marGif = document.getElementById('mar-gif')
+
+    const bSpan = document.getElementById('b-span')
+    const basGif = document.getElementById('bas-gif')
+
+    const gifX = document.getElementById('gif-x-out');
+
     mobileBtn.addEventListener('click', () => {
         nav.classList.add('menu-btn');
     })
     mobileBtnExit.addEventListener('click', () => {
         nav.classList.remove('menu-btn');
     })
+
+    vSpan.addEventListener('click', () => {
+        // vSpan.classList.add('vid-img');
+        vidImage.style.display = 'initial'
+        container.style.display = 'initial'
+    })
+    mSpan.addEventListener('click', () => {
+        // vSpan.classList.add('vid-img');
+        marGif.style.display = 'initial'
+        container.style.display = 'initial'
+    })
+    bSpan.addEventListener('click', () => {
+        // vSpan.classList.add('vid-img');
+        basGif.style.display = 'initial'
+        container.style.display = 'initial'
+    })
+    gifX.addEventListener('click', () => {
+        // vSpan.classList.add('vid-img');
+        vidImage.style.display = 'none'
+        marGif.style.display = 'none'
+        basGif.style.display = 'none'
+        container.style.display = 'none'
+    })
+
 </script>
 
 </body>
