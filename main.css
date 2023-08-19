@@ -242,7 +242,7 @@ nav.menu-btn {
 #gif-x-out{
   color: var(--bordercolor);
   top:14em;
-  right:calc(50% - 12em);
+  right:calc(50% - 10.5em);
   position: absolute;
   animation: fadein 1s;
   z-index: 999;
