@@ -749,4 +749,48 @@ form button{
   /* #gif-x-out{
     right:calc(50% - 15em);
   } */
+
+
+}
+
+@media only screen and (min-width: 2400px) {
+  p{
+    font-size: 1.7em;
+  }
+.hero {
+    height: initial;
+  }
+  .down-arrow{
+    display: none;
+  }
+  .h1left{
+    font-size: 1.8em;
+  }
+  .proj-title{
+    font-size: 1.5em;
+  }
+  .descriptor-text{
+    font-size: 1.5em;
+  }
+  textarea{
+    width:100%;
+  }
+  #square1{
+    width:300px;
+  }
+  #square2{
+    width:300px;
+  }
+  #square3{
+    width:300px;
+  }
+  #square4{
+    top:140vh;
+    width:300px;
+  }
+  #square5{
+    top:120vh;
+    width:300px;
+  }
+
 }
