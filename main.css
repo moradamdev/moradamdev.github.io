@@ -539,9 +539,6 @@ form button{
     text-align: right;
     display: initial;
   }
-  .projects {
-    height: 80vh;
-  }
 
   .container {
     display: flex;
@@ -552,18 +549,22 @@ form button{
     margin-top:6em;
     margin-bottom: 2em;
   }
-
   .proj-image-container {
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
     width: 100vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+
+  }
+  .proj-image-container li{
+    width: 33%;
   }
 
   .proj-title {
-    font-size: .9em;
+    font-size: 1.2vw;
     display: center;
     text-align: center;
     text-decoration: none;
@@ -571,9 +572,10 @@ form button{
   .project-image {
     border: none;
     text-align: center;
+    width:23vw;
   }
   .descriptor-text{
-    font-size: .8em;
+    font-size: 1vw;
   }
 
   .down-arrow {
@@ -768,6 +770,9 @@ form button{
   }
   .proj-title{
     font-size: 1.5em;
+  }
+  .project-image{
+    width: 30vh;
   }
   .descriptor-text{
     font-size: 1.5em;
