@@ -114,7 +114,8 @@ nav.menu-btn {
   text-decoration: none;
   font-size: 2em;
   opacity: 70%;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
 }
 
@@ -317,6 +318,7 @@ nav.menu-btn {
   display: block;
   margin: auto;
   width: 40vh;
+  align-items: center;
 }
 
 .proj-image-container {
